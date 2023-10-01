@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".MainActivity">-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#070707"
+
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp">
+
+    <TextView
+        android:id="@+id/temp"
+        android:layout_width="match_parent"
+        android:layout_height="192dp" />
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="125dp"
+        android:layout_height="165dp"
+        android:layout_below="@id/temp"
+        android:layout_marginTop="-52dp"
+        app:srcCompat="@drawable/women" />
+
+    <ImageView
+        android:id="@+id/img2"
+        android:layout_width="291dp"
+        android:layout_height="101dp"
+        android:layout_below="@id/temp"
+        android:layout_alignRight="@id/img1"
+        android:layout_marginTop="-55dp"
+        android:layout_marginRight="-294dp"
+        app:srcCompat="@drawable/icon1" />
+
+    <ImageView
+        android:id="@+id/img3"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_below="@id/img2"
+        app:srcCompat="@drawable/icon12" />
+
+    <Button
+        android:id="@+id/bregister"
+        android:layout_width="362dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img3"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="47dp"
+        android:background="#36A80C0C"
+        android:onClick="OnRegister"
+        android:text="Create An Account"
+        android:textColor="#D80F5E"
+        android:textSize="16sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_below="@id/bregister"
+        android:layout_marginTop="13dp"
+        android:text="-----  OR  -----"
+        android:textAlignment="center"
+        android:textColor="#D3A32D"
+        android:textSize="16sp"
+        android:textStyle="bold|italic" />
+
+    <ImageView
+        android:id="@+id/img4"
+        android:layout_width="223dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/tv1"
+        android:layout_marginTop="27dp"
+        app:srcCompat="@drawable/gicon" />
+
+    <ImageView
+        android:id="@+id/img5"
+        android:layout_width="160dp"
+        android:layout_height="37dp"
+        android:layout_below="@id/tv1"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="29dp"
+        android:layout_toRightOf="@id/img4"
+        app:srcCompat="@drawable/ficon" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img5"
+        android:layout_marginTop="10dp"
+        android:text="Already have an Account"
+        android:textAlignment="center"
+        android:textColor="#D80F5E"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/blogin"
+        style="@style/Widget.Material3.ExtendedFloatingActionButton.Icon.Tertiary"
+        android:layout_width="176dp"
+        android:layout_height="46dp"
+        android:layout_below="@id/bregister"
+        android:layout_marginLeft="-93dp"
+        android:layout_marginTop="159dp"
+        android:layout_toRightOf="@id/img4"
+        android:background="#0C0C0C"
+        android:text="Sign In"
+        android:onClick="OnLogin"
+        android:textColor="#D80F5E"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+
+
+</RelativeLayout>

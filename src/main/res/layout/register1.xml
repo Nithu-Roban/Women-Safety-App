@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".MainActivity">-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+
+    tools:ignore="MissingClass"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp">
+
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="152dp"
+        android:layout_height="128dp"
+        app:srcCompat="@drawable/women" />
+
+    <ImageView
+        android:id="@+id/img2"
+        android:layout_width="196dp"
+        android:layout_height="54dp"
+        android:layout_marginLeft="-19dp"
+        android:layout_toRightOf="@id/img1"
+        app:srcCompat="@drawable/icon1" />
+
+    <ImageView
+        android:id="@+id/img3"
+        android:layout_width="258dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/img2"
+        android:layout_marginLeft="-53dp"
+        android:layout_marginTop="21dp"
+        android:layout_toRightOf="@id/img1"
+        app:srcCompat="@drawable/icon12" />
+
+    <!--    <com.rilixtech.widget.countrycodepicker.CountryCodePicker-->
+    <!--        android:id="@+id/countryCodePicker"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_gravity="center"-->
+    <!--        app:ccp_autoDetectLanguage="true"-->
+    <!--        app:ccp_defaultNameCode="US"-->
+    <!--        app:ccp_showFullName="false"-->
+    <!--        app:ccp_showNameCode="true" />-->
+
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img1"
+        android:layout_marginTop="49dp"
+        android:text="Verify OTP code"
+        android:textAlignment="center"
+        android:textColor="#DC1664"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/e1"
+        android:layout_width="314dp"
+        android:layout_height="59dp"
+        android:layout_below="@+id/tv1"
+        android:layout_marginLeft="-98dp"
+        android:layout_marginTop="49dp"
+        android:layout_toRightOf="@id/img1"
+        android:ems="10"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="196dp"
+        android:layout_height="66dp"
+        android:layout_below="@+id/e1"
+        android:layout_marginLeft="-41dp"
+        android:layout_marginTop="54dp"
+        android:layout_toRightOf="@id/img1"
+        android:background="#817C3C55"
+        android:text="Verify"
+        android:onClick="onVerify"
+        android:textSize="24sp" />
+
+
+</RelativeLayout>

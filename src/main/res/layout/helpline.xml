@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".MainActivity">-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B8AB82"
+
+    tools:ignore="MissingClass"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="120dp" />
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="164dp"
+        android:layout_height="88dp"
+        android:background="@color/black"
+        app:srcCompat="@drawable/icon1" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="247dp"
+        android:layout_height="91dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="-39dp"
+        android:layout_marginEnd="0dp"
+        android:layout_toRightOf="@id/img1"
+        android:background="@color/black"
+        app:srcCompat="@drawable/loginbg" />
+
+
+    <ImageView
+        android:id="@+id/img2"
+        android:layout_width="wrap_content"
+        android:layout_height="59dp"
+        android:layout_below="@id/img1"
+        android:layout_marginLeft="-27dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/black"
+        app:srcCompat="@drawable/icon12" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="396dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/img2"
+        android:layout_marginTop="23dp"
+        android:text="Emergency Helpline "
+        android:textAlignment="center"
+        android:textColor="#AA0A0A"
+        android:textSize="30sp"
+        android:textStyle="normal|bold" />
+
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="358dp"
+        android:layout_height="57dp"
+        android:layout_below="@id/textView2"
+        android:layout_marginTop="28dp"
+        android:text="112    National Helpline"
+        android:textAllCaps="true"
+        android:textColor="#0E24D8"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="62dp"
+        android:layout_height="51dp"
+        android:layout_below="@id/textView2"
+        android:layout_marginLeft="-30dp"
+        android:layout_marginTop="19dp"
+        android:layout_toRightOf="@id/textView3"
+        android:onClick="onNationalEmergency"
+        android:background="#00FFFFFF"
+        app:srcCompat="@drawable/phone" />
+
+    <TextView
+        android:id="@+id/tv5"
+        android:layout_width="354dp"
+        android:layout_height="49dp"
+        android:layout_below="@id/textView3"
+        android:layout_marginTop="26dp"
+        android:text="108    AMBULANCE"
+        android:textColor="#0E24D8"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="62dp"
+        android:layout_height="51dp"
+        android:layout_below="@id/imageButton2"
+        android:layout_marginLeft="-26dp"
+        android:layout_marginTop="40dp"
+        android:layout_toRightOf="@id/tv5"
+        android:background="#00FFFFFF"
+        android:onClick="onAmbulance"
+        app:srcCompat="@drawable/phone" />
+
+    <TextView
+        android:id="@+id/tv6"
+        android:layout_width="354dp"
+        android:layout_height="49dp"
+        android:layout_below="@id/tv5"
+        android:layout_marginTop="26dp"
+        android:text="102    PREGNANCY MEDIC"
+        android:textColor="#0E24D8"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="62dp"
+        android:layout_height="51dp"
+        android:layout_below="@id/imageButton3"
+        android:layout_marginLeft="-28dp"
+        android:layout_marginTop="29dp"
+        android:layout_toRightOf="@id/tv6"
+        android:onClick="onPregnancyMedic"
+        android:background="#00FFFFFF"
+        app:srcCompat="@drawable/phone" />
+
+    <TextView
+        android:id="@+id/tv7"
+        android:layout_width="354dp"
+        android:layout_height="49dp"
+        android:layout_below="@id/tv6"
+        android:layout_marginTop="26dp"
+        android:text="101    FIRE SERVICE"
+        android:textColor="#0E24D8"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="62dp"
+        android:layout_height="51dp"
+        android:layout_below="@id/imageButton4"
+        android:layout_marginLeft="-27dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/tv7"
+        android:background="#00FFFFFF"
+        android:onClick="onFireService"
+        app:srcCompat="@drawable/phone" />
+
+    <TextView
+        android:id="@+id/tv8"
+        android:layout_width="354dp"
+        android:layout_height="49dp"
+        android:layout_below="@id/tv7"
+        android:layout_marginTop="26dp"
+        android:text="101    POLICE "
+        android:textColor="#0E24D8"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="62dp"
+        android:layout_height="51dp"
+        android:layout_below="@id/imageButton5"
+        android:layout_marginLeft="-26dp"
+        android:layout_marginTop="23dp"
+        android:layout_toRightOf="@id/tv8"
+        android:onClick="onPolice"
+        android:background="#00FFFFFF"
+        app:srcCompat="@drawable/phone" />
+
+
+</RelativeLayout>
